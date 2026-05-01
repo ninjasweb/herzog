@@ -1,0 +1,18 @@
+{
+  "scene_folder": "scene-001",
+  "required_files": [
+    "scene.md"
+  ],
+  "optional_files": [
+    "reference.png",
+    "reference.jpg",
+    "reference-main.png",
+    "image-prompt.md",
+    "video-prompt.md",
+    "continuity-notes.md"
+  ],
+  "outputs": [
+    "video-prompt.md",
+    "continuity-notes.md"
+  ]
+}

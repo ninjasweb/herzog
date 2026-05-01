@@ -2,7 +2,7 @@
 
 ## Status
 
-Initial concept, image/video prompt package, and voiceover direction created.
+Initial concept, image/video prompt package, voiceover direction, alternate tribute concepts, scene animation prompts, image-to-video prompts, transition prompts, and 13-second voiceover options created.
 
 ## Source Idea
 
@@ -29,7 +29,11 @@ A 15-second memorial video honoring Paloma, a beloved deceased pet. Paloma shoul
 - [03-character-designer.md](outputs/03-character-designer.md)
 - [04-image-director.md](outputs/04-image-director.md)
 - [05-voiceover.md](outputs/05-voiceover.md)
+- [08-scene-animation-prompts.md](outputs/08-scene-animation-prompts.md)
+- [09-image-to-video-prompts.md](outputs/09-image-to-video-prompts.md)
+- [10-transition-p2-to-p3.md](outputs/10-transition-p2-to-p3.md)
+- [11-voiceover-13s-options.md](outputs/11-voiceover-13s-options.md)
 
 ## Next Recommended Production Step
 
-Record or synthesize a calm, intimate voiceover using one of the short options in `05-voiceover.md`, then generate a still keyframe of Paloma in the golden meadow using the reference photo and the `image-director` prompt. If identity likeness is strong, use that keyframe as the source image for image-to-video animation.
+Generate each short clip separately using the still-specific image-to-video prompts in `09-image-to-video-prompts.md`, then edit them together with the selected voiceover from `05-voiceover.md`.

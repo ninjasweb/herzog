@@ -1,0 +1,68 @@
+{
+  "scene_id": "",
+  "shot_id": "",
+  "mode": "image_to_video | text_to_video | shot_extension | loop | transition",
+  "reference_image": {
+    "path": "",
+    "exists": false,
+    "analysis": {
+      "subject": "",
+      "pose": "",
+      "wardrobe": "",
+      "environment": "",
+      "lighting": "",
+      "camera": "",
+      "composition": "",
+      "color_palette": [],
+      "mood": "",
+      "motion_opportunities": [],
+      "motion_risks": []
+    }
+  },
+  "narrative_objective": "",
+  "final_video_prompt": "",
+  "negative_prompt": "",
+  "motion_plan": {
+    "dominant_motion": "",
+    "secondary_motion": "",
+    "ambient_motion": "",
+    "locked_elements": []
+  },
+  "camera_motion": {
+    "type": "",
+    "intensity_0_to_5": 0,
+    "description": "",
+    "lens_feel": "",
+    "framing": ""
+  },
+  "subject_motion": {
+    "type": "",
+    "intensity_0_to_5": 0,
+    "description": ""
+  },
+  "environment_motion": {
+    "type": "",
+    "intensity_0_to_5": 0,
+    "description": ""
+  },
+  "lighting_motion": {
+    "type": "",
+    "intensity_0_to_5": 0,
+    "description": ""
+  },
+  "duration_seconds": 0,
+  "transition_in": "",
+  "transition_out": "",
+  "continuity_anchors": {
+    "character": "",
+    "wardrobe": "",
+    "props": "",
+    "environment": "",
+    "lighting": "",
+    "color_palette": "",
+    "camera": "",
+    "mood": ""
+  },
+  "model_notes": "",
+  "qa_risks": []
+}
