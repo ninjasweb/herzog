@@ -1,0 +1,23 @@
+{
+  "project_id": "",
+  "idea": "",
+  "brief": {
+    "concept": "",
+    "tone": "",
+    "audience": "",
+    "platform": ""
+  },
+  "characters": [],
+  "visual_style": {
+    "colors": [],
+    "lighting": "",
+    "camera": ""
+  },
+  "script": "",
+  "shotlist": [],
+  "prompts": {
+    "images": [],
+    "videos": []
+  },
+  "consistency_rules": []
+}

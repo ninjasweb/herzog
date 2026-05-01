@@ -1,0 +1,48 @@
+{
+  "asset_id": "",
+  "asset_type": "hero_image | character_reference | character_design_sheet | scene_keyframe | environment | prop | poster",
+  "scene_id": "",
+  "visual_goal": "",
+  "subject": "",
+  "character_anchors": [],
+  "action": "",
+  "environment": {
+    "location": "",
+    "time_of_day": "",
+    "weather": "",
+    "set_details": []
+  },
+  "camera": {
+    "lens": "",
+    "angle": "",
+    "framing": "",
+    "movement_hint": "",
+    "depth_of_field": ""
+  },
+  "lighting": {
+    "key": "",
+    "fill": "",
+    "rim": "",
+    "practicals": [],
+    "color_temperature": ""
+  },
+  "composition": {
+    "subject_placement": "",
+    "foreground": "",
+    "background": "",
+    "negative_space": ""
+  },
+  "style_lock": "",
+  "color_palette": [],
+  "texture_materials": [],
+  "final_prompt": "",
+  "negative_prompt": "",
+  "handoff_to_video": {
+    "camera_motion": "",
+    "subject_motion": "",
+    "environmental_motion": "",
+    "duration_suggestion": "",
+    "transition_in": "",
+    "transition_out": ""
+  }
+}

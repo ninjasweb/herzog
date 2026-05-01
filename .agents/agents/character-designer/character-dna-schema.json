@@ -1,0 +1,79 @@
+{
+  "character_id": "",
+  "name": "",
+  "role": "",
+  "species_or_type": "",
+  "age_range": "",
+  "personality": {
+    "primary_traits": [],
+    "secondary_traits": [],
+    "emotional_tone": "",
+    "core_motivation": "",
+    "fear_or_weakness": ""
+  },
+  "visual_identity": {
+    "face_structure": "",
+    "eyes": "",
+    "eyebrows": "",
+    "nose": "",
+    "mouth": "",
+    "hair_or_surface": "",
+    "body_proportions": "",
+    "silhouette": "",
+    "distinctive_marks": []
+  },
+  "outfit": {
+    "main_garment": "",
+    "secondary_garment": "",
+    "footwear": "",
+    "accessories": [],
+    "materials": [],
+    "fit": "",
+    "rules": []
+  },
+  "color_palette": {
+    "primary": "",
+    "secondary": "",
+    "accent": "",
+    "body_or_skin": "",
+    "outfit": "",
+    "material_notes": ""
+  },
+  "props": {
+    "signature_prop": "",
+    "secondary_props": [],
+    "prop_rules": []
+  },
+  "expression_system": {
+    "neutral": "",
+    "happy": "",
+    "curious": "",
+    "determined": "",
+    "surprised": "",
+    "optional": []
+  },
+  "action_pose_system": {
+    "idle": "",
+    "main_activity": "",
+    "dynamic_movement": "",
+    "prop_interaction": ""
+  },
+  "behavior_system": {
+    "energy_level": "",
+    "gesture_style": "",
+    "movement_rhythm": "",
+    "body_language": "",
+    "facial_attitude": ""
+  },
+  "style_lock": {
+    "visual_style": "",
+    "rendering": "",
+    "lighting": "",
+    "texture": "",
+    "camera": "",
+    "background": ""
+  },
+  "consistency_rules": [],
+  "base_prompt": "",
+  "negative_prompt": ""
+}
