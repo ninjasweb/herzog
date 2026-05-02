@@ -1,0 +1,17 @@
+{
+  "scene_id": "",
+  "scores": {
+    "narrative_continuity": 0,
+    "character_continuity": 0,
+    "visual_continuity": 0,
+    "lighting_continuity": 0,
+    "camera_continuity": 0,
+    "motion_continuity": 0,
+    "prompt_reliability": 0,
+    "edit_rhythm_continuity": 0,
+    "technical_readiness": 0,
+    "ai_risk_control": 0
+  },
+  "total_score": 0,
+  "status": ""
+}

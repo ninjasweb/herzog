@@ -1,0 +1,46 @@
+{
+  "project_id": "",
+  "status": "PASS | PASS_WITH_FIXES | REWORK_REQUIRED | BLOCKED",
+  "global_score": 0,
+  "executive_summary": "",
+  "scene_audits": [
+    {
+      "scene_id": "",
+      "status": "",
+      "score": 0,
+      "issues": [
+        {
+          "issue": "",
+          "severity": "BLOCKER | MAJOR | MEDIUM | MINOR",
+          "evidence": "",
+          "why_it_matters": "",
+          "fix": "",
+          "owner": ""
+        }
+      ],
+      "continuity_anchors": {
+        "character": "",
+        "wardrobe": "",
+        "props": "",
+        "location": "",
+        "lighting": "",
+        "camera": "",
+        "motion": "",
+        "mood": ""
+      },
+      "decision": ""
+    }
+  ],
+  "cross_scene_continuity": [],
+  "character_lock_audit": [],
+  "visual_bible_audit": {},
+  "motion_audit": {},
+  "prompt_risk_audit": [],
+  "fix_queue": {
+    "blockers": [],
+    "major": [],
+    "medium": [],
+    "minor": []
+  },
+  "final_decision": ""
+}
