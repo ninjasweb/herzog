@@ -9,7 +9,7 @@
     "npm": "11.8.0"
   },
   "scripts": {
-    "list:agents": "find .agents/agents -maxdepth 3 -type f ! -name .DS_Store | sort",
+    "list:agents": "find .agents/agents -maxdepth 5 -type f ! -name .DS_Store | sort",
     "list:projects": "find projects -maxdepth 4 -type f ! -name .DS_Store | sort",
     "validate:skills": "node scripts/validate-skills.mjs",
     "validate": "npm run validate:skills"

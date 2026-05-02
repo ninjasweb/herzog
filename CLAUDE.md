@@ -26,9 +26,9 @@ python3 .agents/skills/skill-creator/scripts/quick_validate.py .agents/skills/<s
 Three top-level concerns, each with strict file conventions:
 
 ### `.agents/agents/<agent-name>/`
-Each agent is a directory with an `AGENT.md` entrypoint that begins with YAML frontmatter (`name`, `description`). The frontmatter `description` is what the orchestrator reads to decide when to route to that agent. Supporting files alongside `AGENT.md` (e.g. `routing-rules.md`, `orchestration.md`, `motion-system.md`, `schemas/*.json`, `formats/*.md`) are loaded as context for that agent only — they are not globally shared.
+Each agent is a directory with an `AGENT.md` entrypoint that begins with YAML frontmatter (`name`, `description`). The frontmatter `description` is what the orchestrator reads to decide when to route to that agent. `AGENT.md` is the only Markdown file at the agent root — every other supporting `.md` lives under `references/` (e.g. `references/routing-rules.md`, `references/orchestration.md`, `references/motion-system.md`, `references/formats/*.md`). JSON schemas remain in their own `schemas/` folder. All of these are loaded as context for that agent only — they are not globally shared.
 
-`herzog-director` is the orchestrator. Its `AGENT.md` + `orchestration.md` + `routing-rules.md` define the canonical pipeline stages (idea → script → visual → generation → cinematic control → audio → editing → QA) and which agents to invoke for each request type. Treat that as the source of truth when wiring new agents into the flow — don't invent a parallel routing scheme.
+`herzog-director` is the orchestrator. Its `AGENT.md` + `references/orchestration.md` + `references/routing-rules.md` define the canonical pipeline stages (idea → script → visual → generation → cinematic control → audio → editing → QA) and which agents to invoke for each request type. Treat that as the source of truth when wiring new agents into the flow — don't invent a parallel routing scheme.
 
 ### `.agents/skills/<skill-name>/`
 Skills follow Anthropic's skill format: a `SKILL.md` entrypoint plus optional `prompts/`, `scripts/`, `references/`, `assets/`, `agents/`. Skills must be self-contained — never scatter skill files at the repo root. Skill directories use kebab-case.
@@ -53,7 +53,7 @@ projects/<project-slug>/
 
 Output files in `outputs/` are numbered in pipeline order and named after the agent that produced them: `00-herzog-director.md`, `01-idea-strategist.md`, `02-scriptwriter.md`, `03-character-designer.md`, `04-image-director.md`, etc. Project `README.md` must list every output as a markdown link (the "Output Index"). When you add a new artifact, update the index.
 
-Scene folders are governed by `.agents/agents/video-director/scene-folder-standard.md` and the `scenes/scene-NNN/` schema in `.agents/agents/video-director/schemas/`. If a scene contains a reference image, the video-director treats it as the strict visual anchor — do not redesign or invent a new scene around it.
+Scene folders are governed by `.agents/agents/video-director/references/scene-folder-standard.md` and the `scenes/scene-NNN/` schema in `.agents/agents/video-director/schemas/`. If a scene contains a reference image, the video-director treats it as the strict visual anchor — do not redesign or invent a new scene around it.
 
 ## Conventions
 
