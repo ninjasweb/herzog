@@ -42,6 +42,7 @@ herzog/
 | `character-designer` | Locks character identity, wardrobe, expression, continuity. |
 | `image-director` | Visual system, style frames, image prompts. |
 | `video-director` | Shot list, scene folders, motion + camera direction, video prompts. |
+| `qa-continuity` | Continuity supervisor. Audits the whole pipeline, scores 0–100, returns a fix queue with owners. Final gate before delivery. |
 
 ### Skills
 
@@ -67,7 +68,8 @@ projects/<project-slug>/
 │   ├── 02-scriptwriter.md
 │   ├── 03-character-designer.md
 │   ├── 04-image-director.md
-│   └── 05-video-director.md
+│   ├── 05-video-director.md
+│   └── 06-qa-continuity.md
 └── scenes/            # video projects only
     └── scene-001/
         ├── scene.md

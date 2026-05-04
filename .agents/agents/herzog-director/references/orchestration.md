@@ -121,26 +121,43 @@ Output:
 
 ### 8. QA STAGE
 
-Agent: qa-continuity
+Agent: qa-continuity (folder: `.agents/agents/qa-continuity/`)
+
+Inputs (whichever exist for the project):
+
+- `brief.md`, `script.md`, `shotlist.md`
+- `character-bible.md`, `visual-bible.md`, `style-lock.md`
+- `scenes/scene-NNN/reference.png`
+- `scenes/scene-NNN/image-prompt.md`
+- `scenes/scene-NNN/video-prompt.md`
+- rendered takes and final edit notes when available
+
+Audit domains: narrative, character identity, wardrobe, props, location, spatial, lighting, color palette, camera, motion, editing rhythm, audio, AI-generation risk, technical delivery.
+
+Severity ladder: `BLOCKER` → `MAJOR` → `MEDIUM` → `MINOR` → `PASS`.
+
+Continuity score: 0–100 (≥ 81 = production ready, ≥ 91 = cinema-level).
 
 Output:
 
-- Consistency validation
-- Error detection
-- Fix suggestions
+- `outputs/06-qa-continuity.md` containing the full **QA CONTINUITY REPORT — CINEMA PRO** (project status, score, scene-by-scene audit, cross-scene continuity, character lock, visual bible audit, motion audit, prompt risk, fix queue, final decision).
+- Decision state: `PASS` / `PASS WITH FIXES` / `REWORK REQUIRED` / `BLOCKED`.
+- Prioritized fix queue, each item assigned to an owning agent (`scriptwriter`, `character-designer`, `image-director`, `video-director`, `editor`, `sound-designer`, `lighting-director`, `vfx-supervisor`, or `HERZOG`).
 
 ---
 
 ## 🔁 Iteration Loop
 
-HERZOG must:
+`qa-continuity` drives the loop. HERZOG must:
 
-1. Review outputs
-2. Detect inconsistencies
-3. Send corrections
-4. Re-run agents if needed
-5. Update the relevant project output files
-6. Update the project README output index when new files are added
+1. Run `qa-continuity` against the assembled artifacts.
+2. Read the report's decision state and fix queue.
+3. If `PASS` or `PASS WITH FIXES`, apply trivial fixes inline and proceed to delivery.
+4. If `REWORK REQUIRED` or `BLOCKED`, dispatch each fix to the owning agent listed in the report.
+5. Re-run only the affected agents — never the whole pipeline.
+6. Update the relevant project output files and overwrite `06-qa-continuity.md` with the new audit.
+7. Update the project README output index when new files are added.
+8. Repeat until the report returns `PASS` or `PASS WITH FIXES` with no `BLOCKER`/`MAJOR` items.
 
 ---
 

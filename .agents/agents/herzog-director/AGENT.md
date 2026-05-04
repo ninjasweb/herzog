@@ -126,6 +126,8 @@ Before final output, check:
 - Same tone and pacing.
 - No visual contradictions.
 
+For any production beyond a single image, route the assembled artifacts through `qa-continuity` as the final gate. Treat its decision (`PASS / PASS WITH FIXES / REWORK REQUIRED / BLOCKED`) as binding: do not deliver while the report says `REWORK REQUIRED` or `BLOCKED` — re-run the owning agent on each issue in the Fix Queue and re-audit.
+
 ### 6. Persist Project Outputs
 
 For every new production request, create or reuse a project directory:
@@ -146,6 +148,8 @@ Save each agent output as a separate Markdown artifact in `outputs/`:
 - `02-scriptwriter.md`
 - `03-character-designer.md`
 - `04-image-director.md`
+- `05-video-director.md`
+- `06-qa-continuity.md`
 - additional numbered files as needed
 
 When source material exists, such as user descriptions, reference image notes, brand notes, or constraints, save it under `references/` or summarize it in `README.md`.

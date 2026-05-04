@@ -31,6 +31,7 @@ Use:
 - image-director
 - video-director
 - sound-designer
+- qa-continuity
 
 ---
 
@@ -66,6 +67,7 @@ Use:
 - Use **minimum viable agents**
 - Avoid redundant work
 - Prefer clarity over complexity
+- `qa-continuity` is the **default final gate** for any multi-agent production — only skip it for a single isolated image with no character or continuity claim
 
 ---
 
